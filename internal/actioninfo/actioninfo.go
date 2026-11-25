@@ -6,7 +6,7 @@ import (
 )
 
 type DataParser interface {
-	Parse(string) error
+	Parse(data string) error
 	ActionInfo() (string, error)
 }
 
@@ -22,6 +22,6 @@ func Info(dataset []string, dp DataParser) {
 			log.Printf("ошибка формирования информации %q: %v", data, err)
 			continue
 		}
-		fmt.Println(info)
+		fmt.Print(info)
 	}
 }
