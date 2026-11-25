@@ -22,6 +22,6 @@ func Info(dataset []string, dp DataParser) {
 			log.Printf("ошибка формирования информации %q: %v", data, err)
 			continue
 		}
-		fmt.Println(info)
+		fmt.Print(info)
 	}
 }
